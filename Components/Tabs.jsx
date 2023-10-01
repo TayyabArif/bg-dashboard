@@ -66,16 +66,3 @@ const Tabs = () => {
 
 export default Tabs;
 
-const TabContent = ({ open, tabCategory, details,children }) => {
-  return (
-    <div>
-      <div
-        className={`mt-8 text-base text-body-color ${
-          open === tabCategory ? "block" : "hidden"
-        } `}
-      >
-        {children}
-      </div>
-    </div>
-  );
-};
