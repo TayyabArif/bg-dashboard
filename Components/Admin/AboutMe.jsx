@@ -137,7 +137,7 @@ const AboutMe = () => {
               </div>   
               <div className="col-span-9">
                 <p className="text-[#ABAFB3]">
-                  : 07 Year Experience
+                  :   07 Year Experience
                 </p>
               </div> 
             </div>
