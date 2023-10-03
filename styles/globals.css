@@ -19,3 +19,16 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+.custom-checkbox {
+  /* Add any styles for the unchecked state here */
+  background-color: #1AD598;
+  border-color: #1AD598;
+}
+
+/* Style for the checked checkbox */
+.custom-checkbox:checked {
+  /* Add any styles for the checked state here */
+  background-color: #1AD598;
+  border-color: #1AD598;
+}
