@@ -1,4 +1,3 @@
-import Tabs from "../Tabs";
 
 const AboutMe = () => {
   return (

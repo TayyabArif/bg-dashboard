@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AboutMe from "./Admin/AboutMe";
+import MyPosts from "./Admin/MyPosts";
 
 const Tabs = () => {
   const [open, setOpen] = useState("about-me");
@@ -30,14 +31,14 @@ const Tabs = () => {
                   </div>
                   <div className="px-5">
                     <button
-                      onClick={() => handleTabOpen("my-matches")}
+                      onClick={() => handleTabOpen("my-posts")}
                       className={`-mb-[1px] w-full border-b-2 py-2 text-base font-medium text-black hover:border-[#8469f4] hover:text-[#8469f4] ${
-                        open === "my-matches"
+                        open === "my-posts"
                           ? "text-primary border-[#8469f4]"
                           : "border-stroke md:border-transparent"
                       }`}
                     >
-                      My Macthes
+                      My Posts
                     </button>
                   </div>
                   <div className="px-5">
@@ -54,7 +55,8 @@ const Tabs = () => {
                   </div>
                 </div>
               </div>
-            { open == 'about-me' ? <AboutMe/> : '' }
+            { open == 'about-me' ? <AboutMe/> :"" }
+            { (open == 'my-posts' ? <MyPosts /> : "")}
             
             </div>
           </div>
